@@ -7,7 +7,24 @@
 #include <unistd.h>
 #include <sys/types.h>
 
+extern char **environ;
+
 /* Function Prototypes Across All Files*/
+
+/* In the "get_input.c" file*/
 char *get_line(void);
+
+/* In the "string_utils1.c" file*/
+size_t _strlen(const char *s);
+int _strncmp(const char *s1, const char *s2, size_t bytes);
+char *_strcpy(char *dest, const char *src);
+char *_strcat(const char *dest, const char *src);
+char *_strtok(char *src, const char *delim);
+
+/* In the "string_utils2.c" file*/
+char *_strdup(const char *src);
+
+/* In the "split_input.c" file*/
+char **split_strings(const char *str, char *delim);
 
 #endif /* SHELL_H */

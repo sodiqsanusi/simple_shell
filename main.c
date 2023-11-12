@@ -8,11 +8,18 @@
 int main(void)
 {
 	char *first_input;
+	char **words = NULL;
 
 	while (1)
 	{
+		int i = 0;
+
 		first_input = get_line();
-		printf("%s\n", first_input);
+		words = split_strings(first_input, "\t ");
+		if (words == NULL)
+			continue;
+		for (i = 0; words[i]; i++)
+			printf("%s\n", words[i]);
 	}
 
 	free(first_input);

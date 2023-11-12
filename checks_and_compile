@@ -1,4 +1,12 @@
 #! /bin/bash
+
+echo -e "\n\n==================== Starting Betty Checks ===========================\n\n"
 betty *.c
+echo -e "\n\n==================== Done with Betty Checks ==========================="
+echo -e "\n\n==================== Starting the Compilation Process ===========================\n\n"
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+echo -e "\n\n==================== Done with Compilation Processes ==========================="
+echo -e "\n\n==================== Starting Valgrind Memory Leaks Check ===========================\n\n"
 valgrind ./hsh
+echo -e "\n\n==================== Done with Valgrind Memory Leaks check ===========================\n\n"
+

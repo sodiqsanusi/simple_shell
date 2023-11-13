@@ -47,7 +47,6 @@ char **split_strings(const char *str, char *delim)
 	char *token = NULL, *base_str = NULL;
 
 	alpha = count_words(str, delim);
-	printf("%d\n", alpha);
 	if (alpha == 0)
 		return (NULL);
 
@@ -73,6 +72,11 @@ char **split_strings(const char *str, char *delim)
 
 	free(base_str);
 	words[i] = NULL;
+	if (!words[0])
+	{
+		free_string_arr(words);
+		return (NULL);
+	}
 	return (words);
 }
 

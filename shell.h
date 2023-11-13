@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 
 extern char **environ;
 
@@ -25,6 +26,12 @@ char *_strtok(char *src, const char *delim);
 char *_strdup(const char *src);
 
 /* In the "split_input.c" file*/
+int count_words(const char *str, char *delim);
 char **split_strings(const char *str, char *delim);
+void free_string_arr(char **);
+
+/* In the "execute_args.c" file*/
+int exec(char *pathname, char **program_args, char **envs);
 
 #endif /* SHELL_H */
+

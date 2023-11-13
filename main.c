@@ -15,27 +15,29 @@ int main(void)
 	while (1)
 	{
 		first_input = get_line();
-		words = split_strings(first_input, "\t ");
+		words = split_strings(first_input, " \t");
 		if (words == NULL)
+		{
+			free(first_input);
 			continue;
+		}
 		child_pid = fork();
 		if (child_pid == -1)
 		{
 			perror("fork");
 			free(first_input);
+			free_string_arr(words);
 			continue;
 		}
-		if (child_pid == 0)
+		if (words && child_pid == 0)
 			exec(words[0], words, environ);
 		else
 		{
 			wait(&status);
 		}
-
 		free(first_input);
 		free_string_arr(words);
 	}
-
 	return (0);
 }
 

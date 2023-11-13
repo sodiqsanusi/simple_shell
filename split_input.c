@@ -2,7 +2,8 @@
 
 /**
 * count_words - Gets the count of words in a string
-* @str: "char *" The string to get the count of
+* @str: "const char *" The string to get the count of
+* @delim: "char *" Delimiters
 *
 * Return: "int" The amount of words present in the string
 */
@@ -41,15 +42,16 @@ int count_words(const char *str, char *delim)
 */
 char **split_strings(const char *str, char *delim)
 {
-	char *base_str = _strdup(str); /* "FREE" */
 	int alpha = 0, i;
 	char **words = NULL;
-	char *token = NULL;
+	char *token = NULL, *base_str = NULL;
 
 	alpha = count_words(str, delim);
+	printf("%d\n", alpha);
 	if (alpha == 0)
 		return (NULL);
 
+	base_str = _strdup(str); /* "FREE" */
 	words = malloc((alpha + 1) * sizeof(char *)); /* "FREE" */
 	token = _strtok(base_str, delim);
 	i = 0;

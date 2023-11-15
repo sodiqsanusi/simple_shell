@@ -1,7 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-/* Other Important Headers, Externs and Struct Variables*/
+/* Other Important Headers, Externs and Struct Variables used*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

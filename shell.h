@@ -12,7 +12,7 @@
 
 extern char **environ;
 
-/* Function Prototypes Across All Files*/
+/*The Function Prototypes Across All Files*/
 
 /* In the "get_input.c" file*/
 char *get_line(void);

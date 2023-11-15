@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-* get_line - Gets a line of input from the terminal
+* get_line - Gets a line of input from the terminal.
 *
-* Return: "char *" The line stream gotten in a string format
+* Return: "char *" The line stream gotten in a string format.
 */
 char *get_line(void)
 {

@@ -34,8 +34,8 @@ int count_words(const char *str, char *delim)
 }
 
 /**
-* split_strings - Splits a string, and puts it in an array "USES MALLOC"
-* @str: "const char *" The string being splitted
+* split_strings - Splits a string, and puts it in an array, "USES MALLOC"
+* @str: "const char *" The string being splitted.
 * @delim: "char *" The delimiter to split the string
 *
 * Return: "char **" An array of strings, with each word splitted
@@ -81,7 +81,7 @@ char **split_strings(const char *str, char *delim)
 }
 
 /**
-* free_string_arr - Free the memory allocated to a string array
+* free_string_arr - Frees the memory allocated to a string array
 * @str_arr: The array of string, both array and individual strings on the heap
 *
 * Return: "void" Nothing

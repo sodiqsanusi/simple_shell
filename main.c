@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-* sighandler - handles the signal from keyboard interrupts
-* @sig: the signal caught
+* sighandler - Handles the signal from keyboard interrupts.
+* @sig: the signal caught.
 *
-* Return: "void" Nothing
+* Return: "void" Nothing.
 */
 static void sighandler(int sig)
 {

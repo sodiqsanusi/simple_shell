@@ -81,10 +81,10 @@ char **split_strings(const char *str, char *delim)
 }
 
 /**
-* free_string_arr - Frees the memory allocated to the string array
-* @str_arr: The array of string, both array and individual strings on the heap
+* free_string_arr - Frees the memory allocated to the string array.
+* @str_arr: The array of string, both array and individual strings on the heap.
 *
-* Return: "void" Nothing
+* Return: "void" Nothing.
 */
 void free_string_arr(char **str_arr)
 {

@@ -8,6 +8,7 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 
 extern char **environ;
 
@@ -33,6 +34,10 @@ void free_string_arr(char **);
 
 /* In the "execute_args.c" file*/
 int exec(char *pathname, char **program_args, char **envs);
+
+/* In the "confirm_path.c" file*/
+char *_getenv(const char *name);
+char *get_path_and_clean(const char *alias);
 
 #endif /* SHELL_H */
 

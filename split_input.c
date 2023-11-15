@@ -58,7 +58,7 @@ char **split_strings(const char *str, char *delim)
 	{
 		char *one_word = NULL;
 
-		if (*token == ' ' || *token == '\t' || *token == '\0')
+		if (*token == '\0')
 		{
 			token = _strtok(NULL, delim);
 			continue;

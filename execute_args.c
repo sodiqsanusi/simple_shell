@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* exec - A function to practise the "execve" system call
+* exec - A function to practice the "execve" system call
 * @pathname: The pathname to the binary executable to be run
 * @program_args: An array of arguments to the executable file, pathname is [0]
 * @envs: Environmental variables the program is supposed to run in

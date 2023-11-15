@@ -11,13 +11,15 @@ char *get_line(void)
 	size_t len = 0;
 	ssize_t bytes_read;
 
-	just_print("$ ");
+	fflush(stdin);
+	/*just_print("$ ");*/
+	fflush(stdin);
 	bytes_read = getline(&line, &len, stdin);
 
 	if (bytes_read == -1)
 	{
 		free(line);
-		exit(98);
+		exit(0);
 	}
 
 	if (bytes_read > 0 && line[bytes_read - 1] == '\n')

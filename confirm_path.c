@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-* _getenv - A function mirroring the normal "getenv" system call
-* @name: "const char *" The name of the environment variable being searched
+* _getenv - A function mirroring the normal "getenv" system call.
+* @name: "const char *" The name of the environment variable being searched.
 *
-* Return: "char *" The information of the environmental variable
+* Return: "char *" The information of the environmental variable.
 */
 char *_getenv(const char *name)
 {
@@ -26,7 +26,7 @@ char *_getenv(const char *name)
 
 /**
 * set_it_right - Puts the pointer to be after the "=" "USES MALLOC!!!"
-* @name: "char *" The direct environmental variable
+* @name: "char *" The direct environmental variable.
 *
 * Return: "char *" The string after the "="
 */
@@ -50,10 +50,10 @@ char *set_it_right(char *name)
 }
 
 /**
-* get_path_and_clean - Gets the "PATH" variable and makes it splittable
-* @alias: "char *" The first argument to the terminal
+* get_path_and_clean - Gets the "PATH" variable and makes it splittable.
+* @alias: "char *" The first argument to the terminal.
 *
-* Return: "int" 0 if alias/file exists, 1 otherwise
+* Return: "int" 0 if alias/file exists,or 1 otherwise.
 */
 char *get_path_and_clean(const char *alias)
 {
@@ -89,4 +89,3 @@ char *get_path_and_clean(const char *alias)
 
 	return (result);
 }
-

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-* _strlen - Calculates the length of a given string
-* @s: The string to be checked
+* _strlen - Calculates the length of a given string.
+* @s: The string to be checked.
 *
-* Return: Integer value of the length
+* Return: Integer value of the length.
 */
 size_t _strlen(const char *s)
 {
@@ -20,9 +20,9 @@ size_t _strlen(const char *s)
 }
 
 /**
-* _strncmp - compares two strings and returns their difference
-* @s1: the first string
-* @s2: the second string
+* _strncmp - compares two strings and returns their difference.
+* @s1: is the first string
+* @s2: is the second string
 * @bytes: number of bytes to compare
 * Return: number of bytes that differ
 */

@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* sighandler - handle signals from keyboard interrupts
+* sighandler - handles the signal from keyboard interrupts
 * @sig: the signal caught
 *
 * Return: "void" Nothing

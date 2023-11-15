@@ -96,3 +96,4 @@ void free_string_arr(char **str_arr)
 	}
 	free(str_arr);
 }
+

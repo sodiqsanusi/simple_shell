@@ -28,3 +28,17 @@ char *_strdup(const char *src)
 	return (dest);
 }
 
+/**
+* just_print - A simpler recreation of the "printf" function
+* @src: "const char *" The string to be printed
+*
+* Return: "void" Nothing
+*/
+void just_print(const char *src)
+{
+	int len;
+
+	len = _strlen(src);
+	write(STDOUT_FILENO, src, len);
+}
+

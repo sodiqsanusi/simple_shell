@@ -89,3 +89,4 @@ char *get_path_and_clean(const char *alias)
 
 	return (result);
 }
+

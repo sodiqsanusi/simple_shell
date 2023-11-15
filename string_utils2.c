@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* _strdup - duplicates a string "USES MALLOC, FREE MEMORY SPACE WHEN DONE"
+* _strdup - Duplicates a string "USES MALLOC, FREE MEMORY SPACE WHEN DONE"
 * @src: source to copy from
 *
 * Return: pointer to malloc'd space

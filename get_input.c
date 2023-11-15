@@ -11,7 +11,7 @@ char *get_line(void)
 	size_t len = 0;
 	ssize_t bytes_read;
 
-	printf("$ ");
+	just_print("$ ");
 	bytes_read = getline(&line, &len, stdin);
 
 	if (bytes_read == -1)

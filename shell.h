@@ -26,6 +26,7 @@ char *_strtok(char *src, const char *delim);
 
 /* In the "string_utils2.c" file*/
 char *_strdup(const char *src);
+void just_print(const char *src);
 
 /* In the "split_input.c" file*/
 int count_words(const char *str, char *delim);
